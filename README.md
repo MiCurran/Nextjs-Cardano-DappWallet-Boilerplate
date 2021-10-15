@@ -14,6 +14,9 @@
 
 This is a [Next.js](https://nextjs.org/) + [Chakra UI](https://chakra-ui.com/docs/) project bootstrapped with this [`nextjs-chakra-boilerplate`](https://github.com/MiCurran/nextjs-chakra-boilerplate).
 
+### Disclaimer  
+*Disclaimer: This software is provided as-is with no warranty. I take no responsibility for lost funds while using this system.*
+
 ## Getting Started
 
 First, install dependencies:

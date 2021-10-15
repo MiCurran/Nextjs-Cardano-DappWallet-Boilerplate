@@ -1,6 +1,8 @@
 {
   "name": "nextjs-chakra-boilerplate",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "Jumping off point for viewing the Cardano Nami Wallet within a Nextjs Application. With ChakraUI & Sass",
+  "homepage": "https://github.com/MiCurran/Nextjs-NamiWallet-Boilerplate",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -26,5 +28,7 @@
   "devDependencies": {
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.0"
-  }
+  },
+  "author": "Miichael Curran",
+  "license": "MIT"
 }
