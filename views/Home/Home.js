@@ -2,20 +2,34 @@ import { Button, Heading, Text } from '@chakra-ui/react'
 import Image from 'next/image'
 import { CustomHead } from '../../components/head'
 import styles from '../../styles/Home.module.scss'
+import StartButton from '../../components/Account/StartButton'
+import {
+VStack,
+} from '@chakra-ui/react'
+import { useStoreState } from 'easy-peasy';
 
-export default function Home() {
+const NamiWalletWrapper = (connected) => (
+  <VStack> 
+    <Heading>Nami Wallet is {connected ? 'connected!' : 'not connected :('}</Heading>
+    <StartButton />
+  </VStack>
+);
+
+export default function Home(props) {
+  const connected = useStoreState((state) => state.connection.connected);
   return (
     <div className={styles.container}>
         <CustomHead title="page title" />
       <main className={styles.main}>
         <Heading className={styles.title} color="brand.900">
-          <a href="https://nextjs.org">Next.js!</a>
+          <a href="https://nextjs.org">Next.js Nami Wallet integration!</a>
         </Heading>
 
         <Text className={styles.description}>
           Boilerplate with Chakra UI - SASS
         </Text>
-
+        <Text mb="10">Interact with the Nami wallet to view and sign transactions on the cardano blockchain</Text>
+        <NamiWalletWrapper connected={connected} />
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>
