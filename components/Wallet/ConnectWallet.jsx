@@ -1,14 +1,9 @@
-import React from 'react';
-import Background from './startButton.svg';
-import style from './StartButton.module.scss';
-//import { navigate } from 'gatsby-link';
+import { useState, useEffect } from 'react';
+import style from './connectWallet.module.scss';
 import Loader from '../../cardano/loader';
 import { useRouter } from 'next/dist/client/router';
-
-// Asset
 import { useStoreActions, useStoreState } from 'easy-peasy';
-import { Button, Box, useToast, useBreakpoint } from '@chakra-ui/react';
-import { Image } from '@chakra-ui/image';
+import { Button, Box, useToast } from '@chakra-ui/react';
 import MiddleEllipsis from 'react-middle-ellipsis';
 import { ChevronRightIcon, InfoIcon } from '@chakra-ui/icons';
 
@@ -19,17 +14,17 @@ const addressToBech32 = async () => {
         Buffer.from(address, 'hex')
     ).to_bech32();
 };
-const StartButton = (props) => {
+const ConnectWallet = (props) => {
     const router = useRouter();
-    const [isLoading, setIsLoading] = React.useState(false);
-    const [flag, setFlag] = React.useState(false);
+    const [isLoading, setIsLoading] = useState(false);
+    const [flag, setFlag] = useState(false);
     const connected = useStoreState((state) => state.connection.connected);
     const setConnected = useStoreActions(
         (actions) => actions.connection.setConnected
     );
     const toast = useToast();
 
-    React.useEffect(() => {
+    useEffect(() => {
         if (connected && !flag) {
             window.cardano.onAccountChange(async () => {
                 const address = await addressToBech32();
@@ -50,7 +45,7 @@ const StartButton = (props) => {
         }
     };
 
-    React.useEffect(() => {
+    useEffect(() => {
         checkConnection();
     }, []);
 
@@ -100,9 +95,9 @@ const StartButton = (props) => {
 };
 
 const Ellipsis = ({ connected }) => {
-    const [change, setChange] = React.useState(false);
+    const [change, setChange] = useState(false);
 
-    React.useEffect(() => {
+    useEffect(() => {
         setChange(true);
         setTimeout(() => setChange(false));
     }, [connected]);
@@ -125,7 +120,7 @@ const Ellipsis = ({ connected }) => {
     );
 };
 
-export default StartButton;
+export default ConnectWallet;
 
 const checkStatus = async (toast, connected) => {
     return (

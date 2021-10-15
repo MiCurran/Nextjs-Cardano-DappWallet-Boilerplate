@@ -1,19 +1,19 @@
-import { Button, Heading, Text } from '@chakra-ui/react'
+import { Heading, Text } from '@chakra-ui/react'
 import Image from 'next/image'
 import { CustomHead } from '../../components/head'
 import styles from '../../styles/Home.module.scss'
-import StartButton from '../../components/Account/StartButton'
+import ConnectWallet from '../../components/Wallet/ConnectWallet';
 import {
 VStack,
 } from '@chakra-ui/react'
 import { useStoreState } from 'easy-peasy';
 
-const NamiWalletWrapper = (connected) => (
-  <VStack> 
-    <Heading>Nami Wallet is {connected ? 'connected!' : 'not connected :('}</Heading>
-    <StartButton />
-  </VStack>
-);
+const NamiWalletWrapper = ({connected}) => {
+  return ( <VStack> 
+    <Heading>Nami Wallet is {connected === null ? 'not connected :(' : 'connected!'}</Heading>
+    <ConnectWallet />
+  </VStack>);
+};
 
 export default function Home(props) {
   const connected = useStoreState((state) => state.connection.connected);

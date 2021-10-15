@@ -42,3 +42,6 @@ This repository also contains a script to create components in the `./components
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Ada Donation Address:  
+`addr1qxdkm6ha9rxsj3r6upfqcwkt5xreu5djr6cgwv2uq4twng2x37st629maarc2dw4w0waapy266z54zmmnfh0ut5dkcrs2qnwgx`
+
