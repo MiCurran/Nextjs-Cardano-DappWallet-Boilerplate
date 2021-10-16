@@ -18,7 +18,9 @@ This is a [Next.js](https://nextjs.org/) + [Chakra UI](https://chakra-ui.com/doc
 ### Disclaimer  
 *Disclaimer: This software is provided as-is with no warranty. I take no responsibility for lost funds while using this system.*
 
-## Getting Started
+## Getting Started  
+  
+  ## You will need an API key from [blockfrost.io](https://blockfrost.io) in order to retrieve details about the Cardano blockchain  
 
 First, install dependencies:
 
@@ -27,6 +29,9 @@ npm install
 # or
 yarn install
 ```  
+  
+Next, your Blockfrost API key to a `.env.local` file as shown in `.env.local.example`  
+
 Then, run the dev server:
 
 ```bash
