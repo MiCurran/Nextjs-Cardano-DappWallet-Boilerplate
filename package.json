@@ -11,6 +11,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@blockfrost/blockfrost-js": "^2.0.1",
     "@chakra-ui/icons": "^1.0.16",
     "@chakra-ui/react": "^1.6.6",
     "@emotion/react": "^11.4.1",

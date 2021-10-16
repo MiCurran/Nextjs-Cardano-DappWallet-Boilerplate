@@ -60,7 +60,7 @@ const ConnectWallet = (props) => {
                     justifyContent: 'center',
                     cursor: 'pointer'
                 }}
-                onClick={() => router.push(`/profile?address=${connected}`)}
+                onClick={() => router.push(`/address/${connected}`)}
             >
                 <Ellipsis connected={connected} />
             </div>
