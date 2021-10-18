@@ -1,4 +1,4 @@
-import { CustomHead } from '../../components/head'
+import { CustomHead } from '../../components/Head'
 import styles from '../../styles/Home.module.scss'
 import ConnectWallet from '../../components/Wallet/ConnectWallet';
 import {
