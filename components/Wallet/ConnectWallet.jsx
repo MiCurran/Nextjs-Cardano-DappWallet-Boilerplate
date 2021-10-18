@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import style from './connectWallet.module.scss';
+import style from './ConnectWallet.module.scss';
 import Loader from '../../cardano/loader';
 import { useRouter } from 'next/dist/client/router';
 import { useStoreActions, useStoreState } from 'easy-peasy';
