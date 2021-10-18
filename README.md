@@ -1,4 +1,3 @@
-<img src="https://img.shields.io/github/issues/micurran/Nextjs-NamiWallet-Boilerplate" />
 <p align="center">
   <img width="200" src=".github/images/nextLogo.png"/>
     <img width="200" src=".github/images/namiLogo.svg"/>

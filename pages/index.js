@@ -1,6 +1,6 @@
 import Home from '../views/Home/Home';
 const axios = require('axios');
-import { LATEST_BLOCK } from '../constants/API/V0/routes';
+import { LATEST_BLOCK } from '../constants/API/v0/routes';
 
 export default function HomePage(props) {
   return (
