@@ -48,10 +48,9 @@ export default function Home(props) {
             >
               Current Epoch &rarr;
             </Heading>
-            {latestBlock && 
-              <Text>
-                {latestBlock.epoch}
-              </Text>
+            {latestBlock
+              ? <Text>{latestBlock.epoch}</Text>
+              : <Text>Not connected to Blockfrost. API KEY NEEDED</Text>
             }
           </Link>
         </Box>

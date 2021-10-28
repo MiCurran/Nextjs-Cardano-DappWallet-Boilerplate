@@ -18,6 +18,7 @@ export async function getServerSideProps(req) {
       return response.data;
     } catch (error) {
       console.error(error.response);
+      return null
     }
   }
   const addressInfo = await getAddressInfo();

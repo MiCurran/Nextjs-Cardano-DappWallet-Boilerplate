@@ -16,6 +16,7 @@ export async function getServerSideProps() {
       return response.data.latestBlock;
     } catch (error) {
       console.error(error);
+      return null
     }
   }
   const latestBlock = await getLatestBlock();
