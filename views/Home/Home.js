@@ -12,7 +12,7 @@ import { useStoreState } from 'easy-peasy';
 
 const NamiWalletWrapper = ({connected}) => {
   return ( <VStack> 
-    <Heading>Nami Wallet is {connected === null ? 'not connected :(' : 'connected!'}</Heading>
+    <Heading>Wallet is {connected === null ? 'not connected :(' : 'connected!'}</Heading>
     <ConnectWallet />
   </VStack>);
 };
