@@ -4,7 +4,7 @@
 </p>
 
 <h2 align="center">
-  <big><strong>Nextjs & ChakraUI - Nami Wallet Integration</strong></big>
+  <big><strong>Nextjs & ChakraUI - Cardano Dapp Wallet Integration</strong></big>
 </h2>
 
 
