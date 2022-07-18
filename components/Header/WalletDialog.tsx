@@ -6,6 +6,7 @@ import { Dialog } from "../Dialog";
 import { setSelectedWallet } from "./wallet";
 
 export const WalletDialog = React.forwardRef((props: any, ref: any) => {
+  WalletDialog.displayName = 'WalletDialog';
   const cardano = getCardano();
   const existingWallets = cardano
     ? Object.keys(cardano).filter(
@@ -42,6 +43,7 @@ export const WalletDialog = React.forwardRef((props: any, ref: any) => {
                 className="text-primary font-bold cursor-pointer hover:opacity-90"
                 href="https://namiwallet.io"
                 target="_blank"
+                rel="noreferrer"
               >
                 Nami
               </a>
@@ -62,6 +64,7 @@ export const WalletDialog = React.forwardRef((props: any, ref: any) => {
 
 const WalletSelection = React.forwardRef(
   ({ walletName, setWallet, cardano }: any, ref: any) => {
+    WalletSelection.displayName = 'WalletSection';
     const [loading, setLoading] = React.useState(false);
     return (
       <Button

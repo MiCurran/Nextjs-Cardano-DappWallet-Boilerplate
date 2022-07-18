@@ -14,6 +14,7 @@ type DialogProps = {
 };
 
 export const Dialog = React.forwardRef((props: DialogProps, ref) => {
+  Dialog.displayName = 'Dialog';
   let [isOpen, setIsOpen] = React.useState(false);
 
   function closeModal() {

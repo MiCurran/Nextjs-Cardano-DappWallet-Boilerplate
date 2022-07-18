@@ -1,5 +1,4 @@
 import styles from '../../styles/Home.module.scss'
-import ConnectWallet from '../../components/Wallet/ConnectWallet';
 import {
 Box,
 Text,
@@ -12,7 +11,6 @@ export default function Address(props) {
   return (
     <Box className={styles.container}>
       <Text fontSize="2xl">This your address info</Text>
-      <ConnectWallet />
       {addressInfo &&
       <> 
         <Text>Balance:</Text>
