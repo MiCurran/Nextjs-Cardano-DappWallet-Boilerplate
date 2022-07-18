@@ -13,7 +13,7 @@ export default function Home(props) {
   const {latestBlock} = props;
   return (
     <Box className={styles.container}>
-        <CustomHead title="page title" />
+        <CustomHead title="page title 2" description='test' />
       <Box className={styles.main}>
         <Heading className={styles.title} color="brand.900">
           <Link href="https://nextjs.org">Next.js Nami Wallet integration!</Link>

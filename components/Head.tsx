@@ -1,6 +1,12 @@
 import Head from 'next/head'; 
 
-export const CustomHead = ({title}) => {
+interface ICustomHead {
+  title: string,
+  description?: string
+}
+
+export const CustomHead = (props: ICustomHead) => {
+  const { title } = {...props}
     return (
     <Head>
         <title>{title}</title>

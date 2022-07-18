@@ -17,7 +17,7 @@ export default function Address(props) {
         <Text>{JSON.stringify(addressInfo.addressDetails.amount[0].quantity / 1_000_000)} Ada</Text>
       </>
       }
-      <pre style={codeStyle} w="50%">{JSON.stringify(addressInfo, null, 2)}</pre>
+      <pre style={codeStyle}>{JSON.stringify(addressInfo, null, 2)}</pre>
     </Box>
   )
 }
