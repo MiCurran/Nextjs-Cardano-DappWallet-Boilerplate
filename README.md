@@ -1,6 +1,6 @@
 <p align="center">
   <img width="200" src=".github/images/nextLogo.png"/>
-    <img width="200" src=".github/images/namiLogo.svg"/>
+    <img width="200" src=".github/images/cardanologo.png"/>
 </p>
 
 <h2 align="center">
@@ -19,7 +19,7 @@ This is a [Next.js](https://nextjs.org/) + [Chakra UI](https://chakra-ui.com/doc
 
 ## Getting Started  
   
-  ## You will need an API key from [blockfrost.io](https://blockfrost.io) in order to retrieve details about the Cardano blockchain  
+  ## 🛑 In order to retrieve details about the Cardano blockchain you will need an API key from [blockfrost.io](https://blockfrost.io)   
 
 First, install dependencies:
 
