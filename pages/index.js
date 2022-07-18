@@ -10,7 +10,7 @@ export default function HomePage(props) {
 
 // we can add server side rendering here to seperate from views
 export async function getServerSideProps() {
-  async function getLatestBlock() {
+ /*  async function getLatestBlock() {
     try {
       const response = await axios.get(LATEST_BLOCK);
       return response.data.latestBlock;
@@ -20,9 +20,10 @@ export async function getServerSideProps() {
     }
   }
   const latestBlock = await getLatestBlock();
+  */
       return {
           props: {
-              latestBlock,
+              
           }
-      };
+      }; 
 };

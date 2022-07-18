@@ -4,6 +4,7 @@ import { theme } from '../constants/theme';
 import { StoreProvider } from 'easy-peasy';
 import store from '../store/store';
 
+
 function App({ Component, pageProps }) {
   return (
     <StoreProvider store={store}>
