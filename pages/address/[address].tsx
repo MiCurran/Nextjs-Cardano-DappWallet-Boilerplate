@@ -4,8 +4,10 @@ import { ADDRESSES } from '../../constants/API/v0/routes';
 
 export default function AddressPage(props) {
   return (
-    <Address {...props} />
-  )
+/*     <Address {...props} />
+ */  
+    <p>w.i.p.</p>
+)
 }
 
 // we can add server side rendering here to seperate from views
