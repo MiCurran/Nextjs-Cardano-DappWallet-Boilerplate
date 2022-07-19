@@ -21,9 +21,9 @@
     "axios": "^0.21.1",
     "easy-peasy": "^5.0.4",
     "framer-motion": "^4.1.17",
-    "next": "11.1.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "next": "^12.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-middle-ellipsis": "^1.2.1",
     "react-truncate-string": "^1.3.0",
     "sass": "^1.38.0",
@@ -32,6 +32,7 @@
     "typescript": "^4.7.4"
   },
   "devDependencies": {
+    "@types/node": "^18.0.6",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.0"
   },

@@ -72,6 +72,7 @@ const WalletSelection = React.forwardRef(
         onClick={async () => {
           setLoading(true);
           const address = await setSelectedWallet(walletName);
+          console.log('clicked', address)
           if (address) {
             setWallet({
               walletName,
